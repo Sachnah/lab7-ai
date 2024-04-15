@@ -1,0 +1,28 @@
+1. All people who are graduating are happy
+2. Happy people smile.
+3. Ram is graduating .
+
+happy(X):- grad(X).
+smile(X):- happy(X).
+grad(ram).
+
+2
+1. If triangle is equilateral then it is isosceles.
+2. If traingle is isosceles then two sides AB and AC are equal.
+3. If AB and AC are equal then angle B and C are equal.
+4. ABC is an equilateral triangle
+
+iso(ABC):-equi(ABC).
+
+equi(ab,ac):-iso(ABC).
+equal(b,c):-equi(ab,ac).
+equi(ABC).
+
+3
+1.All cats like fish
+2.Cats eats everything they like
+3.Ziggy is a cat
+
+likes(ziggy,fish).
+cat(ziggy).
+eats(X,Y):-cat(X),likes(X,Y).
